@@ -1,0 +1,7 @@
+band = input("What is your favorite band? ")
+print("You have great taste!", band, "is also my favorite band.")
+first_noun = input("Enter a noun: ")
+second_noun = input("Enter a noun: ")
+sound = input("Enter a sound: ")
+verb = input("Enter a verb: ")
+print("The", first_noun, "on the bus", verb, sound*6, "The", first_noun, "on the bus", verb, sound*3, "All through the", second_noun, ".")
