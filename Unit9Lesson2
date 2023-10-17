@@ -1,0 +1,35 @@
+# compares two words and returns whether they are anagrams
+def are_anagrams(word1, word2):
+   # check strs are the same len
+    if len(word1) != len(word2):
+        return False
+
+    # compare letter count dictionaries {letter: count}
+    s1_dict = {}
+    s2_dict = {}
+    for i in range(len(word1)):
+        s1_dict[word1[i]] = s1_dict.get(word1[i], 0) + 1
+        s2_dict[word2[i]] = s2_dict.get(word2[i], 0) + 1
+
+    return s1_dict == s2_dict
+
+# Fibonacci Recursive Solution
+def fib(num):
+  if num < 2:
+    return num
+  else:
+    return fib(num-1) + fib(num-2)
+
+# given a string word, we return True if it is a palindrome and False if it is not
+def palindrome(word):
+  return word == word[::-1]
+
+def palindrome_r(word):
+  if len(word) == 0 or len(word) == 1:
+    return True
+  if word[0] != word[len(word)-1]:
+    return False
+  else:
+    return palindrome_r(word[1:-1])
+
+print(palindrome_r("abcdefedcba"))
