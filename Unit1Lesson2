@@ -1,0 +1,23 @@
+#we are working on cartoons
+#cartoons under consideration-(training-dora, spiderman, gravity falls, testing-Rick and Morty, Spongebob)
+#Ask for the number of seasons(short or long)
+seasons=int(input("How many seasons does the cartoon have? "))
+
+#Intended audience(children or adults)
+audience=int(input("Intended Audience - Enter 1 for children or Enter 2 for adults: "))
+#tv channels (disney or nickelodeon)
+channels=int(input("TV Channels- Enter 1 for disney or Enter 2 for nickelodeon: "))
+#Building the conditionals
+if seasons<=5: 
+  if channels==1:
+    print("Spider-Man")
+  else:
+    if audience == 1:
+      print("Dora")
+    else:
+      print("Gravity Falls")
+else:
+  if audience == 1:
+    print("Spongebob")
+  else:
+    print("Rick and Morty")
